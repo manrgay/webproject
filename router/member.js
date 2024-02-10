@@ -63,7 +63,7 @@ router.get('/register', (req, res) => {
 router.post('/register', (req, res) => {
     const { name,lastname, email,username, password } = req.body;
     const sql = "INSERT INTO login (name, lastname, email,username, password) VALUES (?, ?, ? ,?,?)";
-    pool.query(sql, [name,lastname,email, username, password], (err, results) => {
+    pool.query(sql, [name,lastname,email, username, md5(password)], (err, results) => {
         if (err) {
             console.error(err);
             res.render('member/register', { msg: 'Registration failed, please try again.' });
