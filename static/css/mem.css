@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 5vw;
+    background: linear-gradient(125deg,#66733B,#F1F1F1);
+    text-decoration: none;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-1 {
+    background: linear-gradient(125deg,#FFF4E5,#FFFFFF);
+}
+
+
+.list {
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.list-home {
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-seedling {
+    color: #F1F1F1;
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+.list-name {
+    color: #eca06d;
+    border: 3px solid #F1F1F1;
+    text-shadow: 2px 1px 0px #F1F1F1;
+    
+    border-radius: 10px;
+    width: 5vw;
+    height: 3vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-items a {
+    font-size: 1.2VW;
+    color: #F1F1F1;
+    align-items: center;
+    margin: 20px;
+    
+
+}
+
+.logo {
+    
+    padding: 10px;
+    
+}
+
+.logo a {
+    color: black;
+    font-size: 2vw;   
+}
+
+.img-aa {
+    display: flex;
+    /* background: #66733B; */
+}
+
+.img-aa img {
+    width: 80vw;
+    height: 25vw;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+
+.img-aa:hover {
+    transform: scale(0.9);
+    /*อันนี้ตอนชี้จะกว้างขึ้นนิดนึง*/
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #66733B; */
+}
+
+.showslides {
+    
+    /* width: 50vw;
+    margin: 10px; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 200px;
+    /* background: red; */
+    
+      
+}
+
+
+ 
+.logo {
+    overflow: hidden;
+    /* background: #66733B; */
+    
+} 
+
+.cc {
+    margin: 0;
+    width: 50vw; 
+    height: 30vh; 
+    margin-left: 30%;
+    font-size: 1.2rem;
+    margin-top: 20.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-wrap: break-word;
+}

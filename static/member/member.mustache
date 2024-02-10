@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="/css/mem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<form action="/mem" method="post">
+<body class="body-1">
+    <nav>
+        <div class="list">
+            
+            <div class="list-home">
+                <i class="fa-solid fa-seedling"></i>
+
+            </div>
+             
+             {{#username}}
+             {{username}}
+            <a class="list-name" href="/logout">Logout
+            {{/username}}
+                
+            
+            
+            </>
+                
+            </div>
+
+            <div class="list-items">   
+                <a href="d1.html">
+                    หน้าหลัก
+                </a>
+                <a href="d2.html">
+                    รายการสินค้า
+                </a>
+                <a href="d3.html">
+                    วิธีการชำระเงิน
+                </a>
+                <a href="d4.html">
+                    ประวัติการซื้อ
+                </a>
+                <a href="d5.html">
+                    เกี่ยวกับเรา
+                </a>
+            </div>
+        
+                <div class="logo">
+                    <a href="home.html">ZERO VAGLOCAL</a>
+                </div>
+    </nav><br>
+
+    <div class="img-aa">
+        <img src="https://cdn.chiangmainews.co.th/wp-content/uploads/2017/10/07100319/b5-w18h8-1.jpg" alt="">
+        <img src="https://www.bhg.com/thmb/Mwd_YEkDbVg_fPsUDcWr3eZk9W0=/5645x0/filters:no_upscale():strip_icc()/difference-between-fruits-vegetables-01-5f92e7ec706b463287bcfb46985698f9.jpg" alt="">
+    </div>
+<br><br><br>
+    <div class="message">
+        <h2>ยินดีต้อนรับสู่เว็บขายผักของเรา! </h2>
+<br><br>
+        <p style="font-size: 1.1vw;">เรามีผักสดๆ จากสวนของเราที่จะช่วยให้คุณมีสุขภาพดีได้อย่างง่ายดาย </p>
+        <p style="font-size: 1.1vw;"> ไม่ว่าคุณกำลังมองหาผักสีสันสดใสสำหรับอาหารค่ำ หรือเพื่อเติมเต็มสุขภาพของคุณในทุกมื้อ</p>
+        <p style="font-size: 1.1vw;">ทุกสิ่งทุกอย่างที่คุณต้องการสามารถหาได้ที่นี่ค่ะ/ครับ! </p>
+        <p style="font-size: 1.1vw;">ลองเลือกชมสินค้าของเราและสั่งซื้อออนไลน์ได้เลยค่ะ/ครับ!</p>
+    </div>
+<br><br><br><br><br><br>
+    <!-- slideshow  -->
+
+  
+    <div class="showslides">
+        <style>
+            .logo img {
+              width: 350px;
+              max-width: 350px;
+              height: 250px;
+              max-height: 250px;
+              opacity: 0;
+              position: absolute;
+              animation: slideLogo 10s infinite;
+            }
+          
+            .logo img:nth-child(1) {
+              animation-delay: 0s;
+            }
+          
+            .logo img:nth-child(2) {
+              animation-delay: 5s;
+            }
+          
+            .logo img:nth-child(3) {
+              animation-delay: 10s;
+            }
+          
+            @keyframes slideLogo {
+              0% {
+                opacity: 0;
+                transform: translateX(100%);
+              }
+              20% {
+                opacity: 1;
+                transform: translateX(0%);
+              }
+              80% {
+                opacity: 1;
+                transform: translateX(0%);
+              }
+              100% {
+                opacity: 0;
+                transform: translateX(-100%);
+              }
+            }
+          </style>
+    
+        <div class="container">
+            <div class="con">
+                <div class="logo">
+                    <a href="d2.html" id="logoSlider">
+                        <!-- Use a container to hold the images -->
+                        <div id="logoSliderContainer">
+                            <img src="https://c.pxhere.com/photos/e3/7a/vegetable_ye_tian_salad_green_vitamins_fresh-668743.jpg!d" class="logo1">
+                            <!-- Add more images here -->
+                            <img src="https://img.lovepik.com/photo/20211119/large/lovepik-green-vegetables-picture_500249920.jpg" class="logo2">
+                            <img src="https://cdn.gedgoodlife.com/wp-content/uploads/2022/10/117641-2.jpg" class="logo3">
+                            <!-- Add more images as needed -->
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .logo img {
+              width: 350px;
+              max-width: 350px;
+              height: 250px;
+              max-height: 250px;
+              opacity: 0;
+              position: absolute;
+              animation: slideLogo 10s infinite;
+            }
+          
+            .logo img:nth-child(1) {
+              animation-delay: 0s;
+            }
+          
+            .logo img:nth-child(2) {
+              animation-delay: 5s;
+            }
+          
+            .logo img:nth-child(3) {
+              animation-delay: 10s;
+            }
+          
+            @keyframes slideLogo {
+              0% {
+                opacity: 0;
+                transform: translateX(100%);
+              }
+              20% {
+                opacity: 1;
+                transform: translateX(0%);
+              }
+              80% {
+                opacity: 1;
+                transform: translateX(0%);
+              }
+              100% {
+                opacity: 0;
+                transform: translateX(-100%);
+              }
+            }
+          </style>
+    
+        <div class="container">
+            <div class="con">
+                <div class="logo">
+                    <a href="d2.html" id="logoSlider">
+                        <!-- Use a container to hold the images -->
+                        <div id="logoSliderContainer">
+                            <img src="https://c.pxhere.com/photos/5b/09/onions_vegetables_healthy_power_vegetable_eat_food-1057013.jpg!d" class="logo1">
+                            <!-- Add more images here -->
+                            <img src="https://c.pxhere.com/photos/a3/e4/radish_food_vegetable-750818.jpg!d" class="logo2">
+                            <img src="https://c.pxhere.com/photos/7c/3e/garlic_white_food-1134935.jpg!d" class="logo3">
+                            <!-- Add more images as needed -->
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .logo img {
+              width: 350px;
+              max-width: 350px;
+              height: 250px;
+              max-height: 250px;
+              opacity: 0;
+              position: absolute;
+              animation: slideLogo 10s infinite;
+            }
+          
+            .logo img:nth-child(1) {
+              animation-delay: 0s;
+            }
+          
+            .logo img:nth-child(2) {
+              animation-delay: 5s;
+            }
+          
+            .logo img:nth-child(3) {
+              animation-delay: 10s;
+            }
+          
+            @keyframes slideLogo {
+              0% {
+                opacity: 0;
+                transform: translateX(100%);
+              }
+              20% {
+                opacity: 1;
+                transform: translateX(0%);
+              }
+              80% {
+                opacity: 1;
+                transform: translateX(0%);
+              }
+              100% {
+                opacity: 0;
+                transform: translateX(-100%);
+              }
+            }
+          </style>
+    
+        <div class="container">
+            <div class="con">
+                <div class="logo">
+                    <a href="d2.html" id="logoSlider">
+                        <!-- Use a container to hold the images -->
+                        <div id="logoSliderContainer">
+                            <img src="https://puechkaset.com/wp-content/uploads/2015/07/%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B8%A5%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%95%E0%B8%B2.jpg" class="logo1">
+                            <!-- Add more images here -->
+                            <img src="https://lzd-img-global.slatic.net/g/p/0fadd9ca3545b2819ddf703c0e05f4b7.jpg_720x720q80.jpg" class="logo2">
+                            <img src="http://s.isanook.com/he/0/ud/0/4377/thumb.jpg" class="logo3">
+                            <!-- Add more images as needed -->
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="cc">
+        <p>การบริโภคผักสดมีประโยชน์สำคัญต่อสุขภาพทั้งร่างกายและจิตใจของเรา ควรเพิ่มผักลงในเมนูอาหารของเราอย่างสม่ำเสมอเพื่อให้ได้รับสารอาหารที่สำคัญและสุขภาพที่ดีอย่างทั่วถึง</p>
+        <p>การเลือกซื้อและเก็บรักษาผักสดให้ถูกต้องเป็นสิ่งสำคัญที่ช่วยให้คุณสามารถเพลิดเพลินกับคุณค่าทางโภชนาการและรสชาติของผักอย่างเต็มที่ นอกจากนี้ยังช่วยลดการสูญเสียและประหยัดเงินใช้ได้ในระยะยาว</p>
+
+    </div>
+    </form>
+</body>
+</html>

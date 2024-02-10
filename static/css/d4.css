@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.body-1 {
+    background: linear-gradient(125deg,#FFF4E5,#FFFFFF);
+}
+nav{
+    padding: 1vw;
+    background: linear-gradient(125deg, #66733B, #F1F1F1);
+    
+}
+.to p{
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+    
+}
+.to1 a{
+    font-size: 2vw;
+    color: black;
+    text-decoration: none;
+}
+.to {
+    display: flex;
+}
+
+.fa-bag-shopping {
+    color: #F1F1F1;
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+body {
+    
+    background-color: #f0f0f0; /* สีพื้นหลัง */
+    margin: 0;
+    padding: 0;
+}
+
+.aa {
+    font-size: 1.2vw;
+}
+
+.container1 {
+    max-width: 50vw; /* กำหนดความกว้างสูงสุดของ container */
+    margin: 0 auto; /* จัดตำแหน่งกึ่งกลางตามแนวนอน */
+    padding: 20px;
+    /* background: red; */
+}
+
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+.purchase-history {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+
+.purchase-item {
+    background-color: #fff; /* สีพื้นหลังของสินค้า */
+    padding: 20px;
+    margin: 10px;
+    /* border-radius: 10px; กำหนดมุมของสินค้า  */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* เงาของสินค้า */
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    /* background: #66733B; */
+}
+
+
+
+.purchase-item img {
+    width: 40%;
+    max-width: 40%;
+    height: 40%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.purchase-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.purchase-item p {
+    margin: 5px 0;
+}
