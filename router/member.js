@@ -4,7 +4,7 @@ const mysql = require('mysql2');
 const bodyParser = require("body-parser");
 const path = require('path');
 const cookie = require('cookie-parser');
-
+const md5 =require('md5')
 router.use(cookie());
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
@@ -25,7 +25,7 @@ router.get('/login', (req, res) => {
 router.post('/login', (req, res) => {
     const { username, password } = req.body;
     const sql = "SELECT * FROM login WHERE username = ? AND password = ?";
-    pool.query(sql, [username, password], (err, results) => {
+    pool.query(sql, [username,md5(password)], (err, results) => {
         if (err) {
             console.error(err);
             res.render('member/login');
