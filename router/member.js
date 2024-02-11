@@ -89,9 +89,8 @@ router.get('/productlist', (req, res) => {
 router.get('/payment', (req, res) => {
     res.render('member/payment');
 });
-router.post('/upload', (req, res) => {
-    const { name,address, phone} = req.body;
-});
+
+
 router.post('/upload', (req, res) => {
     const { name, address, phone } = req.body;
     const sql = "INSERT INTO telbel_money (name, address, phone) VALUES (?, ?, ?)";
