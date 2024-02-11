@@ -203,7 +203,7 @@ function addtocart() {
 
     Swal.fire({
         icon: 'success',
-        title: 'Add' + product[productindex].name + ' KUY สั่งเพิ่มดิ ???'
+        title: ' Add ' + product[productindex].name + ' to cart '
     })
     $("#cartcount").css('display', 'flex').text(cart.length)
 }
@@ -251,7 +251,7 @@ function deinitems(action, index) {
             if(cart[index].count <= 0) {
                 Swal.fire({
                     icon: 'warning',
-                    title: 'KUY จะเอาออกไรจริงจัง ???',
+                    title: 'Delete the product list !!',
                     showConfirmButton: true,
                     showCancelButton: true,
                     confirmButtonText: 'delete',
