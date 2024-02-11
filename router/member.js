@@ -103,7 +103,7 @@ router.post('/pay', (req, res) => {
             console.error(err);
             return res.status(500).json({ message: 'Error uploading data to telbel_money table' });
         } else {
-            return res.redirect('/payment');
+            return res.redirect('/record');
         }
     });
 });

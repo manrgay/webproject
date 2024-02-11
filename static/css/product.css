@@ -241,7 +241,7 @@ nav {
    
 }
 
-.add {
+.add{
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 10px;
@@ -250,6 +250,10 @@ nav {
     background: #ee9a56;
     margin-left: 10px;
     color: #F1F1F1;
+}
+.add a{
+    color: #0c0c0c;
+    text-decoration: none;
 }
 
 .buy{
