@@ -47,11 +47,9 @@ nav {
    
   
 }
-.B{
-    margin-left: 16%;
-}
+
 .B a{
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: black;
     text-decoration: none;
     width: 150px;
@@ -82,30 +80,40 @@ nav {
     
    
 }
-.at3  {
-    width: 27vw; /* จำกัดขนาดของรูปภาพให้ไม่เกินความกว้างของพื้นที่ที่แสดง */
-    height: 5vw; /* ทำให้รูปภาพปรับตัวให้สัดส่วน */
-    display: block; /* จัดให้รูปภาพแสดงแบบบล็อก */
-    margin: 1vw; 
-    padding: 30px; /* เพิ่มช่องว่างรอบรูปภาพ */
-    border: 1px solid #151414; /* เพิ่มเส้นขอบสีเทา */
-    border-radius: 5px; /* เพิ่มมุมโค้งให้กับรูปภาพ */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาใต้รูปภาพ */
 
-       
+.at3  {
+    margin-left: 50%;
+    width: 10vw; /* จำกัดขนาดของรูปภาพให้ไม่เกินความกว้างของพื้นที่ที่แสดง */
+    height: 5vw; /* ทำให้รูปภาพปรับตัวให้สัดส่วน */
+    display: flex; /* จัดให้รูปภาพแสดงแบบบล็อก */
+    padding: 30px; /* เพิ่มช่องว่างรอบรูปภาพ */
+  
+}
+.qw {
+    margin: 0 auto;
+   
+    width: 95vw;
+    height: 40vw;
+    justify-content: space-between;
+    align-items: center;
+   
 }
 
-
 .container {
+    width: 70%;
+    height: 50%;
+    
     display: flex;
     justify-content: space-between;
-    max-width: 70%; 
     margin: 0 auto; }
 .container1 {
+    width: 70%;
+    height: 30%;
+   
         display: flex;
         justify-content: space-between;
-        width: 95vw;
-        height:20vw;
+        margin: 0 auto;
+       
         }
 
 .custom-input1 {
@@ -114,7 +122,7 @@ nav {
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 15px;
-        margin: 10px;
+        margin: 0 auto;
         border-top-color: black; 
 }
 .custom-input {
@@ -130,29 +138,16 @@ nav {
     body {
         background-size: cover; }
 
-/* img fontawesome */
+
 .fa-truck-fast {
     color: #747373;
     font-size: 2rem;
     margin-right: 15px;
 }
-.fa-credit-card {
-    color: #747373;
-    font-size: 2rem;
-    margin-right: 15px;
-}
-.fa-building-columns {
-    color: #747373;
-    font-size: 2rem;
-    margin-right: 15px;
-}
-.fa-qrcode {
-    color: #747373;
-    font-size: 2rem;
-    margin-right: 15px;
-}
-.fa-mobile {
-    color: #747373;
-    font-size: 2rem;
-    margin-right: 15px;
+
+.as{
+    
+
+    margin-top: 15%;
+
 }

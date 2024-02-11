@@ -91,15 +91,19 @@ router.get('/payment', (req, res) => {
 });
 
 
-router.post('/upload', (req, res) => {
+router.post('/pay', (req, res) => {
     const { name, address, phone } = req.body;
+    if (!name || !address || !phone) {
+        return res.status(400).json({ message: 'Please fill in all required fields.' });
+    }
+
     const sql = "INSERT INTO money (name, address, phone) VALUES (?, ?, ?)";
     pool.query(sql, [name, address, phone], (err, results) => {
         if (err) {
             console.error(err);
-            res.status(500).json({ message: 'Error uploading data to telbel_money table' });
+            return res.status(500).json({ message: 'Error uploading data to telbel_money table' });
         } else {
-            res.status(200).json({ message: 'Data uploaded successfully to telbel_money table' });
+            return res.redirect('/payment');
         }
     });
 });
