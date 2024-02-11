@@ -38,6 +38,21 @@ nav {
     margin-right: 15px;
 }
 
+.aaa {
+    color: #eca06d;
+    font-size: 1.8vw;
+    text-shadow: 2px 1px 1px #F1F1F1;
+    
+    border-radius: 10px;
+    width: 5vw;
+    height: 3vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .list-name {
     color: #eca06d;
     border: 3px solid #F1F1F1;
@@ -120,14 +135,40 @@ nav {
 } 
 
 .cc {
-    margin: 0;
-    width: 50vw; 
-    height: 30vh; 
-    margin-left: 30%;
+    margin: 10px;
+    width: 100%; 
+    height: 10vw; 
+    
     font-size: 1.2rem;
     margin-top: 20.5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow-wrap: break-word;
+    
+    
+}
+.cc1 {
+    margin: 10px;
+    padding: 10px;
+    width: 30vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.cc2 {
+    margin: 10px;
+    padding: 10px;
+    width: 30vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
 }

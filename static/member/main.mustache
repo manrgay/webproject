@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
 </head>
-<body class="body-1">
     <form action="/main" method="post">
+    
+   <body class="body-1">
     <nav>
         <div class="list">
             
@@ -16,30 +19,57 @@
                 <i class="fa-solid fa-seedling"></i>
 
             </div>
-            <a class="list-name" href="/login">Login</a>
+
+            <div>
+              <script id="user-template" type="text/x-handlebars-template">
+                  
+                      <a class="aaa" href="/login">Login</a>
+                  
+              </script>
+          
+              
+              <div id="user-info"></div>
+          
+              <script>
+                 
+                  var source = document.getElementById("user-template").innerHTML;
+          
+                  
+                  var template = Handlebars.compile(source);
+          
+                  
+                  var data = { username: "JohnDoe" };
+          
+                  
+                  var html = template(data);
+          
+                  
+                  document.getElementById("user-info").innerHTML = html;
+              </script>
+              </div>
                 
             </div>
 
             <div class="list-items">   
-                <a href="/login">
+                <a href="d1.html">
                     หน้าหลัก
                 </a>
-                <a href="/login">
+                <a href="d2.html">
                     รายการสินค้า
                 </a>
-                <a href="/login">
+                <a href="d3.html">
                     วิธีการชำระเงิน
                 </a>
-                <a href="/login">
+                <a href="d4.html">
                     ประวัติการซื้อ
                 </a>
-                <a href="/aboutme">
+                <a href="d5.html">
                     เกี่ยวกับเรา
                 </a>
             </div>
         
                 <div class="logo">
-                    <a>ZERO VAGLOCAL</a>
+                    <a href="home.html">ZERO VAGLOCAL</a>
                 </div>
     </nav><br>
 
@@ -250,10 +280,21 @@
     </div>
 
     <div class="cc">
-        <p>การบริโภคผักสดมีประโยชน์สำคัญต่อสุขภาพทั้งร่างกายและจิตใจของเรา ควรเพิ่มผักลงในเมนูอาหารของเราอย่างสม่ำเสมอเพื่อให้ได้รับสารอาหารที่สำคัญและสุขภาพที่ดีอย่างทั่วถึง</p>
-        <p>การเลือกซื้อและเก็บรักษาผักสดให้ถูกต้องเป็นสิ่งสำคัญที่ช่วยให้คุณสามารถเพลิดเพลินกับคุณค่าทางโภชนาการและรสชาติของผักอย่างเต็มที่ นอกจากนี้ยังช่วยลดการสูญเสียและประหยัดเงินใช้ได้ในระยะยาว</p>
+      <div class="cc1">
+        <h2>การบริโภคผักสด</h2><br>
+        <p>มีประโยชน์สำคัญต่อสุขภาพทั้งร่างกายและจิตใจของเรา ควรเพิ่มผักลงในเมนูอาหารของเราอย่างสม่ำเสมอเพื่อให้ได้รับสารอาหารที่สำคัญและสุขภาพที่ดีอย่างทั่วถึง</p>
+      </div>
+        
+      <div class="cc2">
+        <h2>การเลือกซื้อและเก็บรักษาผักสด</h2><br>
+        <p>เป็นสิ่งสำคัญที่ช่วยให้คุณสามารถเพลิดเพลินกับคุณค่าทางโภชนาการและรสชาติของผักอย่างเต็มที่ นอกจากนี้ยังช่วยลดการสูญเสียและประหยัดเงินใช้ได้ในระยะยาว</p>
+      </div>
+        
 
     </div>
-    </form>
+    
 </body>
+
+    </form>
+
 </html>

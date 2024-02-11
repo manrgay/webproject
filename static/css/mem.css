@@ -37,6 +37,16 @@ nav {
     font-size: 3rem;
     margin-right: 15px;
 }
+.s1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* background: #b3b4ad; */
+    align-items: center;
+    width: 5vw;
+    height: 3vw;
+    margin: 10px;
+}
 
 .aaa {
     color: #eca06d;
@@ -44,20 +54,9 @@ nav {
     text-shadow: 2px 1px 1px #F1F1F1;
     
     border-radius: 10px;
-    width: 5vw;
-    height: 3vw;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    
 
-}
-.sl{
-    font-size: 1.1vw;
-    color: #FFFFFF;
-   
-    
-    
 }
 
 
@@ -130,14 +129,38 @@ nav {
 } 
 
 .cc {
-    margin: 0;
-    width: 50vw; 
-    height: 30vh; 
-    margin-left: 30%;
+    margin: 10px;
+    width: 100%; 
+    height: 10vw; 
+    
     font-size: 1.2rem;
     margin-top: 20.5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow-wrap: break-word;
+    
+    
+}
+.cc1 {
+    width: 30vw;
+    padding: 10px;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.cc2 {
+    width: 30vw;
+    padding: 10px;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
 }
