@@ -157,13 +157,12 @@ function searchproduct(param) {
 var productindex = 0;
 function openproduct(index) {
     productindex = index;
-    console.log(productindex)
-    $("#modalDesc").css('display', 'flex')
+    console.log(productindex);
+    $("#modalDesc").css('display', 'flex');
     $("#mdd-img").attr('src', product[index].img);
     $("#mdd-name").text(product[index].name);
     $("#mdd-price").text(`${product[index].price} THB`);
-    $("#mdd-desc").text(product[index].descriptio);
-
+    $("#mdd-desc").text(product[index].description); // แก้ไขคำเป็น description แทน descriptio
 }
 
 function closemodal() {

@@ -38,10 +38,10 @@ nav {
     margin-right: 15px;
 }
 
-.list-name {
+.aaa {
     color: #eca06d;
-    border: 3px solid #F1F1F1;
-    text-shadow: 2px 1px 0px #F1F1F1;
+    font-size: 1.8vw;
+    text-shadow: 2px 1px 1px #F1F1F1;
     
     border-radius: 10px;
     width: 5vw;
@@ -50,7 +50,17 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+.sl{
+    font-size: 1.1vw;
+    color: #FFFFFF;
+   
+    
+    
+}
+
+
 
 .list-items a {
     font-size: 1.2VW;
