@@ -157,12 +157,13 @@ function searchproduct(param) {
 var productindex = 0;
 function openproduct(index) {
     productindex = index;
-    console.log(productindex);
-    $("#modalDesc").css('display', 'flex');
+    console.log(productindex)
+    $("#modalDesc").css('display', 'flex')
     $("#mdd-img").attr('src', product[index].img);
     $("#mdd-name").text(product[index].name);
     $("#mdd-price").text(`${product[index].price} THB`);
-    $("#mdd-desc").text(product[index].description); // แก้ไขคำเป็น description แทน descriptio
+    $("#mdd-desc").text(product[index].descriptio);
+
 }
 
 function closemodal() {
@@ -170,7 +171,6 @@ function closemodal() {
 }
 
 var cart = [];
-
 function addtocart() {
     var pass = true;
     //กดสั่งเมื่อไม่เจอตำปหน้งซ้ำก็ไปต่อ
