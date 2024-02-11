@@ -89,6 +89,21 @@ router.get('/productlist', (req, res) => {
 router.get('/payment', (req, res) => {
     res.render('member/payment');
 });
+router.post('/upload', (req, res) => {
+    const { name,address, phone} = req.body;
+});
+router.post('/upload', (req, res) => {
+    const { name, address, phone } = req.body;
+    const sql = "INSERT INTO telbel_money (name, address, phone) VALUES (?, ?, ?)";
+    pool.query(sql, [name, address, phone], (err, results) => {
+        if (err) {
+            console.error(err);
+            res.status(500).json({ message: 'Error uploading data to telbel_money table' });
+        } else {
+            res.status(200).json({ message: 'Data uploaded successfully to telbel_money table' });
+        }
+    });
+});
 
 router.get('/aboutme', (req, res) => {
     res.render('member/aboutme');
