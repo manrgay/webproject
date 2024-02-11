@@ -5,9 +5,11 @@ const bodyParser = require("body-parser");
 const path = require('path');
 const cookie = require('cookie-parser');
 const md5 =require('md5')
+
 router.use(cookie());
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
+
 
 const pool = mysql.createPool({
     user: process.env.DB_USER,
@@ -16,6 +18,7 @@ const pool = mysql.createPool({
     password: process.env.DB_PASSWORD,
     port: 3306,
 });
+
 
 // Login
 router.get('/login', (req, res) => {
@@ -62,6 +65,7 @@ router.get('/register', (req, res) => {
 
 router.post('/register', (req, res) => {
     const { name,lastname, email,username, password } = req.body;
+    
     const sql = "INSERT INTO login (name, lastname, email,username, password) VALUES (?, ?, ? ,?,?)";
     pool.query(sql, [name,lastname,email, username, md5(password)], (err, results) => {
         if (err) {
@@ -95,6 +99,8 @@ router.get('/record', (req, res) => {
 router.get('/main', (req, res) => {
     res.render('member/main');
 });
+
+
 
 
 
