@@ -93,7 +93,7 @@ router.get('/payment', (req, res) => {
 
 router.post('/upload', (req, res) => {
     const { name, address, phone } = req.body;
-    const sql = "INSERT INTO telbel_money (name, address, phone) VALUES (?, ?, ?)";
+    const sql = "INSERT INTO money (name, address, phone) VALUES (?, ?, ?)";
     pool.query(sql, [name, address, phone], (err, results) => {
         if (err) {
             console.error(err);
