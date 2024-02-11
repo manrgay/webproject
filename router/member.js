@@ -9,7 +9,7 @@ const md5 =require('md5')
 router.use(cookie());
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
-
+const multer = require('multer');
 
 const pool = mysql.createPool({
     user: process.env.DB_USER,
@@ -18,6 +18,7 @@ const pool = mysql.createPool({
     password: process.env.DB_PASSWORD,
     port: 3306,
 });
+
 
 
 // Login
