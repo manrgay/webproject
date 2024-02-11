@@ -92,13 +92,13 @@ router.get('/payment', (req, res) => {
 
 
 router.post('/pay', (req, res) => {
-    const { name, address, phone } = req.body;
-    if (!name || !address || !phone) {
+    const { name, address, phone,pic } = req.body;
+    if (!name || !address || !phone || !pic) {
         return res.status(400).json({ message: 'Please fill in all required fields.' });
     }
 
-    const sql = "INSERT INTO money (name, address, phone) VALUES (?, ?, ?)";
-    pool.query(sql, [name, address, phone], (err, results) => {
+    const sql = "INSERT INTO money (name, address, phone, pic) VALUES (?, ?, ? , ?)";
+    pool.query(sql, [name, address, phone, pic], (err, results) => {
         if (err) {
             console.error(err);
             return res.status(500).json({ message: 'Error uploading data to telbel_money table' });
