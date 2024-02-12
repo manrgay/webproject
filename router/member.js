@@ -119,8 +119,4 @@ router.get('/main', (req, res) => {
     res.render('member/main');
 });
 
-
-
-
-
 module.exports = router;
